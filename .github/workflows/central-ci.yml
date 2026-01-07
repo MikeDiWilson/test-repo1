@@ -1,0 +1,12 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  ci:
+    uses: MikeDiWilson/ci-automation/.github/workflows/central-ci.yml@main
+    with:
+      run-lint: true
+      run-tests: true
